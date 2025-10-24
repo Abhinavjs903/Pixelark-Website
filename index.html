@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixelark</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div id="verticalMenu">
+  <img src="https://i.ibb.co/MDBw7Prr/Screenshot-2025-10-20-173405.png" alt="Pixelark logo">
+  <div class="menu-item" data-index="0">HOME</div>
+  <div class="menu-item" data-index="1">REGISTER NOW</div>
+  <div class="menu-item" data-index="2">OUR TEAM</div>
+  <div class="menu-item" data-index="3">OUR PROJECTS</div>
+  <div class="menu-item" data-index="4">CONTACT US</div>
+  <div class="menu-item" data-index="5">SOCIAL MEDIA</div>
+  <div class="menu-item" data-index="6">OUR VISION</div>
+</div>
+
+<div id="viewport">
+  <div id="scrollContainer">
+  <section class="panel" id="home">
+  <div class="panel-inner">
+    <!-- Enlarged logo -->
+    <img src="https://i.ibb.co/MDBw7Prr/Screenshot-2025-10-20-173405.png" alt="Pixelark Logo" class="home-logo">
+    
+    <!-- Tagline with emojis -->
+    <p class="subtitle tagline">⚡✨ EVERY BRAND NEEDS A SPARK, BUT WE ARE HERE FOR LIGHTNING ⚡✨</p>
+  </div>
+</section>
+
+
+
+
+    <section class="panel" id="register">
+      <div class="panel-inner">
+        <h1 class="title">REGISTER NOW</h1>
+        <p class="register-line">WE CREATE // WE DESIGN // WE DELIVER</p>
+        <button class="glow-btn" onclick="goToPanel(4)">REGISTER NOW</button>
+
+      </div>
+    </section>
+
+    <section class="panel" id="team"><div class="panel-inner"><h1 class="title">OUR TEAM</h1></div></section>
+    <section class="panel" id="projects"><div class="panel-inner"><h1 class="title">OUR PROJECTS</h1></div></section>
+    <section class="panel" id="contact"><div class="panel-inner"><h1 class="title">CONTACT US</h1></div></section>
+    <section class="panel" id="social"><div class="panel-inner"><h1 class="title">SOCIAL MEDIA</h1></div></section>
+    <section class="panel" id="vision"><div class="panel-inner"><h1 class="title">OUR VISION</h1></div></section>
+  </div>
+</div>
+
+<div id="cursor"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
